@@ -1,34 +1,27 @@
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
-from dotenv import load_dotenv
-import os
 
-# Load environment variables
-load_dotenv()
-
-# Initialize the Flask app
 app = Flask(__name__)
 
-# Database configuration
-app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv('DATABASE_URL')
+# Use an SQLite in-memory database for testing purposes
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///test.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
-# Initialize SQLAlchemy
+# Initialize the database
 db = SQLAlchemy(app)
 
-# Define a simple model to test the database
-class Task(db.Model):
+# Define a User model
+class User(db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    title = db.Column(db.String(80), nullable=False)
-    description = db.Column(db.String(200), nullable=True)
+    username = db.Column(db.String(80), nullable=False, unique=True)
+    email = db.Column(db.String(120), nullable=False, unique=True)
 
     def __repr__(self):
-        return f'<Task {self.title}>'
+        return f'<User {self.username}>'
 
-# Define a basic route
 @app.route('/')
 def home():
-    return "Task Manager API"
+    return "Flask and SQLAlchemy are working!"
 
 if __name__ == '__main__':
     app.run(debug=True)
