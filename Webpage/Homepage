@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskTickTornado</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <div class="logo">TaskTickTornado</div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="#dashboard" class="cta">Manage My Tasks</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>TaskTickTornado</h1>
+            <p>Whirl Through Tasks with Precision and Speed!</p>
+            <div class="hero-buttons">
+                <a href="#features" class="btn">Learn More</a>
+                <a href="#dashboard" class="btn-primary">Get Started</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <h2>Features Designed for You</h2>
+        <div class="feature-grid">
+            <div class="feature-item">
+                <h3>Task Management</h3>
+                <p>Easily create, update, and organize your tasks.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Email Notifications</h3>
+                <p>Never miss an important deadline again.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Custom Alerts</h3>
+                <p>Stay in control with personalized reminders.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Collaboration</h3>
+                <p>Assign and track tasks with your team.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <p>Explore how TaskTickTornado can help you stay productive:</p>
+        <ul>
+            <li>Personalized task management tools.</li>
+            <li>Reliable email reminders for critical deadlines.</li>
+            <li>Customizable notifications to suit your workflow.</li>
+        </ul>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p>We'd love to hear from you! Reach out to us at:</p>
+        <p>Email: <a href="mailto:support@taskticktornado.com">support@taskticktornado.com</a></p>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 TaskTickTornado. All rights reserved.</p>
+        <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    </footer>
+</body>
+</html>
