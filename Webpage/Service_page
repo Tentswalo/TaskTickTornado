@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - TaskTickTornado</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            background: #4CAF50;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        h1, h2, h3 {
+            color: #4CAF50;
+        }
+
+        .service {
+            background: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        .service h3 {
+            margin-top: 0;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .service p {
+            margin: 10px 0;
+            display: none; /* Hidden by default */
+        }
+
+        .toggle-icon {
+            font-size: 18px;
+            color: #4CAF50;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Our Services</h1>
+        <p>Discover how TaskTickTornado can transform your task management experience.</p>
+    </header>
+    
+    <div class="container">
+        <div class="service">
+            <h3>
+                Task Creation and Organization 
+                <span class="toggle-icon">+</span>
+            </h3>
+            <p>Create and prioritize tasks effortlessly. Add due dates, categorize tasks, and track progress with ease.</p>
+        </div>
+
+        <div class="service">
+            <h3>
+                Email Notifications 
+                <span class="toggle-icon">+</span>
+            </h3>
+            <p>Stay updated with timely email reminders for important tasks, upcoming deadlines, and overdue items.</p>
+        </div>
+
+        <div class="service">
+            <h3>
+                Customizable Alerts 
+                <span class="toggle-icon">+</span>
+            </h3>
+            <p>Personalize your notifications to fit your schedule and stay on top of your most urgent tasks.</p>
+        </div>
+
+        <div class="service">
+            <h3>
+                Collaborative Task Management 
+                <span class="toggle-icon">+</span>
+            </h3>
+            <p>Work seamlessly with your team. Assign tasks, share boards, and track progress collaboratively.</p>
+        </div>
+
+        <div class="service">
+            <h3>
+                Analytics and Reporting 
+                <span class="toggle-icon">+</span>
+            </h3>
+            <p>Gain insights into your productivity with detailed reports on completed, pending, and overdue tasks.</p>
+        </div>
+
+        <div class="service">
+            <h3>
+                Intuitive Dashboard 
+                <span class="toggle-icon">+</span>
+            </h3>
+            <p>Access your tasks, deadlines, and projects on a user-friendly dashboard available on all devices.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 TaskTickTornado. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // JavaScript for Toggle Functionality
+        document.querySelectorAll('.service h3').forEach(header => {
+            header.addEventListener('click', () => {
+                const paragraph = header.nextElementSibling;
+                const icon = header.querySelector('.toggle-icon');
+
+                // Toggle visibility of the paragraph
+                paragraph.style.display = paragraph.style.display === 'none' || paragraph.style.display === '' 
+                    ? 'block' 
+                    : 'none';
+
+                // Update the toggle icon
+                icon.textContent = icon.textContent === '+' ? '-' : '+';
+            });
+        });
+    </script>
+</body>
+</html>
