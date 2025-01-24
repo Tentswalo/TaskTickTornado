@@ -1,7 +1,5 @@
 # TaskTickTornado
 
-Here’s a sample `README.md` file for your **TaskTickTornado** project, written in Markdown, formatted for GitHub, and optimized to include essential details for contributors, users, and developers.
-
 ---
 
 ```markdown
@@ -27,11 +25,17 @@ Here’s a sample `README.md` file for your **TaskTickTornado** project, written
 
 ```
 TaskTickTornado/
+
 ├── static/               # CSS, JS, and image files
+
 ├── templates/            # HTML templates for the web app
+
 ├── app.py                # Flask application
+
 ├── requirements.txt      # Dependencies for the project
+
 ├── README.md             # Project documentation
+
 └── LICENSE               # License for the project
 ```
 
@@ -116,7 +120,7 @@ Have questions or need help? Feel free to reach out:
 
 - **Email**: [support@taskticktornado.com](mailto:support@taskticktornado.com)
 - **Website**: [TaskTickTornado](https://www.taskticktornado.com)
-- **Phone**: +1 800-555-1234
+- **Phone**: +27 800-555-1234
 
 ---
 
@@ -132,10 +136,3 @@ Have questions or need help? Feel free to reach out:
 ```
 
 ---
-
-### **Customizations**
-1. Replace `https://github.com/your-username/TaskTickTornado.git` with your actual GitHub repository URL.
-2. Update the email, phone, and website to match your branding.
-3. Include additional instructions if you’re using Docker, CI/CD, or advanced deployment.
-
-Let me know if you’d like help with the deployment or GitHub repository setup!
