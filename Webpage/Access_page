@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Access - TaskTickTornado</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            background: #4CAF50;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        h1, h2, h3 {
+            color: #4CAF50;
+        }
+
+        .access-section {
+            background: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        .access-section h3 {
+            margin-top: 0;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .access-section .content {
+            margin: 10px 0;
+            display: none; /* Hidden by default */
+        }
+
+        .toggle-icon {
+            font-size: 18px;
+            color: #4CAF50;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Access TaskTickTornado</h1>
+        <p>Login or register to begin managing your tasks with ease.</p>
+    </header>
+    
+    <div class="container">
+        <!-- Login Section -->
+        <div class="access-section">
+            <h3>
+                Login 
+                <span class="toggle-icon">+</span>
+            </h3>
+            <div class="content">
+                <!-- Embed Caspio Login Form -->
+                <iframe 
+                    src="YOUR_CASPIO_EMBED_URL_FOR_LOGIN" 
+                    width="100%" 
+                    height="300" 
+                    style="border: none;">
+                </iframe>
+            </div>
+        </div>
+
+        <!-- Registration Section -->
+        <div class="access-section">
+            <h3>
+                Register 
+                <span class="toggle-icon">+</span>
+            </h3>
+            <div class="content">
+                <!-- Embed Caspio Registration Form -->
+                <iframe 
+                    src="YOUR_CASPIO_EMBED_URL_FOR_REGISTRATION" 
+                    width="100%" 
+                    height="400" 
+                    style="border: none;">
+                </iframe>
+            </div>
+        </div>
+
+        <!-- Request Access Section -->
+        <div class="access-section">
+            <h3>
+                Request Access 
+                <span class="toggle-icon">+</span>
+            </h3>
+            <div class="content">
+                <p>If you’re an organization or team looking to onboard multiple users, submit your request below:</p>
+                <!-- Embed Caspio Request Access Form -->
+                <iframe 
+                    src="YOUR_CASPIO_EMBED_URL_FOR_REQUEST_ACCESS" 
+                    width="100%" 
+                    height="500" 
+                    style="border: none;">
+                </iframe>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 TaskTickTornado. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // JavaScript for Toggle Functionality
+        document.querySelectorAll('.access-section h3').forEach(header => {
+            header.addEventListener('click', () => {
+                const content = header.nextElementSibling;
+                const icon = header.querySelector('.toggle-icon');
+
+                // Toggle visibility of the content
+                content.style.display = content.style.display === 'none' || content.style.display === '' 
+                    ? 'block' 
+                    : 'none';
+
+                // Update the toggle icon
+                icon.textContent = icon.textContent === '+' ? '-' : '+';
+            });
+        });
+    </script>
+</body>
+</html>
