@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Features - TaskTickTornado</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            background: #4CAF50;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        h1, h2, h3 {
+            color: #4CAF50;
+        }
+
+        .feature {
+            background: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        .feature h3 {
+            margin-top: 0;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .feature p {
+            margin: 10px 0;
+            display: none; /* Hidden by default */
+        }
+
+        .toggle-icon {
+            font-size: 18px;
+            color: #4CAF50;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Features</h1>
+        <p>Explore the tools that make TaskTickTornado your ultimate productivity partner.</p>
+    </header>
+    
+    <div class="container">
+        <div class="feature">
+            <h3>
+                Task Creation and Prioritization 
+                <span class="toggle-icon">+</span>
+            </h3>
+            <p>Create and manage tasks effortlessly. Assign priorities, set due dates, and track progress efficiently.</p>
+        </div>
+
+        <div class="feature">
+            <h3>
+                Timely Email Notifications 
+                <span class="toggle-icon">+</span>
+            </h3>
+            <p>Receive automated reminders for deadlines, overdue tasks, and high-priority items.</p>
+        </div>
+
+        <div class="feature">
+            <h3>
+                Customizable Alerts 
+                <span class="toggle-icon">+</span>
+            </h3>
+            <p>Set personalized reminders and notification schedules for enhanced productivity.</p>
+        </div>
+
+        <div class="feature">
+            <h3>
+                Intuitive Dashboard 
+                <span class="toggle-icon">+</span>
+            </h3>
+            <p>View tasks, deadlines, and performance metrics on a user-friendly interface.</p>
+        </div>
+
+        <div class="feature">
+            <h3>
+                Collaboration Tools 
+                <span class="toggle-icon">+</span>
+            </h3>
+            <p>Share boards, assign tasks, and monitor progress collaboratively with your team.</p>
+        </div>
+
+        <div class="feature">
+            <h3>
+                Analytics and Reporting 
+                <span class="toggle-icon">+</span>
+            </h3>
+            <p>Track productivity trends and analyze completed, pending, and overdue tasks with detailed insights.</p>
+        </div>
+
+        <div class="feature">
+            <h3>
+                Secure and Reliable 
+                <span class="toggle-icon">+</span>
+            </h3>
+            <p>Your data is protected with end-to-end encryption and high availability.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 TaskTickTornado. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // JavaScript for Toggle Functionality
+        document.querySelectorAll('.feature h3').forEach(header => {
+            header.addEventListener('click', () => {
+                const paragraph = header.nextElementSibling;
+                const icon = header.querySelector('.toggle-icon');
+
+                // Toggle visibility of the paragraph
+                paragraph.style.display = paragraph.style.display === 'none' || paragraph.style.display === '' 
+                    ? 'block' 
+                    : 'none';
+
+                // Update the toggle icon
+                icon.textContent = icon.textContent === '+' ? '-' : '+';
+            });
+        });
+    </script>
+</body>
+</html>
